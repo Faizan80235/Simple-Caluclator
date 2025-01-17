@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Calculator container */
+.container {
+  background-color: #e9ecef;
+  border: 5px solid #dee2e6;
+  margin: 50px auto;
+  width: 320px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Calculator buttons */
+[type="button"] {
+  font-size: 18px;
+  margin: 10px  ;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* On hover */
+[type="button"]:hover {
+  background-color: #0056b3;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Number buttons */
+button.number {
+  background-color: #28a745;
+}
+
+button.number:hover {
+  background-color: #1e7e34;
+}
+
+/* Operator buttons */
+button.operation {
+  background-color: #ffc107;
+}
+
+button.operation:hover {
+  background-color: #e0a800;
+}
+
+/* Clear button */
+#clear {
+  background-color: #dc3545;
+  width: calc(100% - 30px);
+  margin: 10px auto;
+}
+
+#clear:hover {
+  background-color: #c82333;
+}
+
+/* Text input */
+[type="text"] {
+  border: 2px solid #ced4da;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #495057;
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+  }
+
+  [type="button"],
+  #clear {
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  [type="text"] {
+      font-size: 16px;
+  }
+}
+
+
